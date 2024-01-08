@@ -1,0 +1,8 @@
+#text-container {
+    position: relative;
+}
+
+#color-change-text {
+    color: white;
+    transition: color 0.3s ease;
+}
