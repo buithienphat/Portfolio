@@ -5,10 +5,7 @@ import "./HomeStyle.css";
 const Home = () => {
     useEffect(() => {
         const ball = document.querySelector(".ball");
-        let width = screen.width;
-
         ball.style.mix;
-
         let mouseX = -100;
         let mouseY = 0;
 
@@ -46,7 +43,7 @@ const Home = () => {
     return (
         <div
             id="home"
-            className="h-screen flex items-center justify-between select-none max-xl:flex-col max-xl:justify-center max-xl:gap-[300px] max-lg:gap-[200px] max-sm:gap-[100px]"
+            className="h-screen flex items-center justify-between select-none max-xl:flex-col max-xl:justify-center max-xl:gap-[200px] max-lg:gap-[200px] max-sm:gap-[100px]"
         >
             <div className="max-xl:w-[100%]">
                 <p className="text-2xl text-[#9CA3AF]">Hello I am</p>
@@ -61,46 +58,52 @@ const Home = () => {
                 <p className="text-xl text-[#9CA3AF] mt-2 mb-5 max-sm:text-sm max-sm:mb-3">
                     6 Month of Experience
                 </p>
-                <Button>Contact Me</Button>
+                <a
+                    href="#contact"
+                    className="bg-[#14C25C] inline-flex items-center h-[50px] px-[30px] rounded-xl uppercase tracking-tight font-semibold"
+                >
+                    {" "}
+                    Contact me
+                </a>
             </div>
-            <div className="stage w-[35%] h-[250px] max-sm:h-[70px]">
+            <div className="stage w-[35%] top-[50%] max-sm:h-[70px]">
                 <div className="cubespinner">
-                    <div className="cube flex items-center justify-center bg-sky-500/100 ite face1">
+                    <div className="cube flex items-center justify-center ite face1">
                         <img
                             className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
                             src="/assets/img/cssicon.png"
                             alt="cssicon"
                         />
                     </div>
-                    <div className="cube flex items-center justify-center bg-sky-500/75  ite face2">
+                    <div className="cube flex items-center justify-center ite face2">
                         <img
                             className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
                             src="/assets/img/nextjs-icon.png"
                             alt="nextjsicon"
                         />
                     </div>
-                    <div className="cube flex items-center justify-center bg-sky-500/50 ite face3">
+                    <div className="cube flex items-center justify-center ite face3">
                         <img
                             className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
                             src="/assets/img/htmlicon.png"
                             alt="htmlicon"
                         />
                     </div>
-                    <div className="cube flex items-center justify-center bg-white ite face4">
+                    <div className="cube flex items-center justify-center ite face4">
                         <img
                             className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
                             src="/assets/img/JSicon.png"
                             alt="jsicon"
                         />
                     </div>
-                    <div className="cube flex items-center justify-center bg-white ite face5">
+                    <div className="cube flex items-center justify-center ite face5">
                         <img
                             className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
                             src="/assets/img/React-icon.png"
                             alt="reacticon"
                         />
                     </div>
-                    <div className="cube flex items-center justify-center bg-white ite face6">
+                    <div className="cube flex items-center justify-center ite face6">
                         <img
                             className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
                             src="/assets/img/redux-icon.png"
@@ -108,8 +111,8 @@ const Home = () => {
                         />
                     </div>
                 </div>
-                <div className="ball max-sm:hidden"></div>
             </div>
+            <div className="ball"></div>
         </div>
     );
 };

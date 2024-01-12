@@ -19,7 +19,7 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="text-center py-40 max-sm:pt-0">
+        <div id="contact" className="text-center pb-40 max-sm:pt-0">
             <div className="textbox mb-20">
                 <h2 className="text-8xl text-[#00ff85] mt-7 mb-7 font-bold tracking-wider max-sm:text-6xl">
                     Contact

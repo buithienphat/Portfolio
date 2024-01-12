@@ -1,0 +1,17 @@
+/* external css: flickity.css */
+/* flickity on by default */
+.carousel:after {
+    content: "flickity";
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    /* disable Flickity for large devices */
+    .carousel:after {
+        content: "";
+    }
+    .carousel-cell {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+}
