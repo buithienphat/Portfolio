@@ -15,7 +15,7 @@ const About = () => {
                 <p>
                     Hello, I am a Front-end web developer with over 6 month of
                     experience. My programming skills include HTML, CSS,
-                    TaiwindCss, JavaScript, ReactJs, Redux, NextJs.
+                    TaiwindCss, JavaScript, ReactJs, Redux, NextJs, TypeScript.
                 </p>
                 <p className="my-[10px]">
                     I always want to learn and research to improve myself and

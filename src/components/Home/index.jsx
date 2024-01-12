@@ -66,7 +66,7 @@ const Home = () => {
                     Contact me
                 </a>
             </div>
-            <div className="stage w-[35%] top-[50%] max-sm:h-[70px]">
+            <div className="stage w-[35%] h-[250px] top-[50%] max-sm:h-[70px]">
                 <div className="cubespinner">
                     <div className="cube flex items-center justify-center ite face1">
                         <img

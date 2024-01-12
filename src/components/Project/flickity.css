@@ -5,6 +5,18 @@
     display: none;
 }
 
+.flickity-page-dots {
+    bottom: -50px;
+}
+.flickity-page-dots .dot {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: #00ff85;
+}
+
 @media screen and (max-width: 1023px) {
     /* disable Flickity for large devices */
     .carousel:after {

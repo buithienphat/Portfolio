@@ -10,7 +10,7 @@ const Project = () => {
             // options
             cellAlign: "left",
             contain: true,
-            pageDots: false,
+            // pageDots: false,
             prevNextButtons: false,
             autoPlay: 2000,
             watchCSS: true,
