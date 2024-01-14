@@ -30,20 +30,15 @@ const Home = () => {
 
         const homeElelment = document.querySelector("#home");
         document.addEventListener("mousemove", function (event) {
-            if (event.pageY > homeElelment.offsetHeight || event.pageX < 80) {
-                ball.style.display = "none";
-            } else {
-                ball.style.display = "block";
-                mouseX = event.pageX;
-                mouseY = event.pageY;
-            }
+            mouseX = event.pageX;
+            mouseY = event.pageY;
         });
     }, []);
 
     return (
         <div
             id="home"
-            className="h-screen flex items-center justify-between select-none max-xl:flex-col max-xl:justify-center max-xl:gap-[200px] max-lg:gap-[200px] max-sm:gap-[100px]"
+            className="h-screen flex items-center justify-between select-none min-h-[600px] max-xl:flex-col max-xl:justify-center max-xl:gap-[200px] max-lg:gap-[200px] max-sm:gap-[100px]"
         >
             <div className="max-xl:w-[100%]">
                 <p className="text-2xl text-[#9CA3AF]">Hello I am</p>
@@ -112,7 +107,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="ball"></div>
+            <div className="ball z-[0]] "></div>
         </div>
     );
 };

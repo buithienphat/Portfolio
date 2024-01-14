@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -9,6 +9,20 @@ import Project from "./components/Project";
 function App() {
     const [windowWidth, setWindowWidth] = useState(0);
     const [windowHeight, setWindowHeight] = useState(0);
+
+    const refCheck = useRef(null);
+    const check = refCheck.current?.offsetTop;
+
+    console.log("check", check);
+
+    const scrollToContact = (e) => {
+        e?.preventDefault();
+        window.scrollTo({
+            top: check,
+            behavior: "smooth",
+        });
+    };
+
     let resizeWindow = () => {
         setWindowWidth(window.innerWidth);
         setWindowHeight(window.innerHeight);
@@ -17,7 +31,7 @@ function App() {
         resizeWindow();
         window.addEventListener("resize", resizeWindow);
         return () => window.removeEventListener("resize", resizeWindow);
-    }, []);
+    }, [windowWidth, windowHeight]);
 
     return (
         <>
@@ -32,9 +46,9 @@ function App() {
                 </div>
                 <Navbar />
                 <Home />
-                <About />
+                <About scrollToContact={scrollToContact} />
                 <Project />
-                <Contact />
+                <Contact refCheck={refCheck} />
                 <div className="sky">
                     <div className="stars"></div>
                     <div className="stars2"></div>

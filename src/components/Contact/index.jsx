@@ -5,7 +5,7 @@ import { MESSAGE, REGREX } from "../../contant/validate";
 import { message } from "antd";
 import { alert } from "../../contant/antMessage";
 
-const Contact = () => {
+const Contact = ({ refCheck }) => {
     const {
         register,
         handleSubmit,
@@ -19,7 +19,11 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="text-center pb-40 max-sm:pt-0">
+        <div
+            id="contact"
+            className="text-center pb-40 max-sm:pt-0"
+            ref={refCheck}
+        >
             <div className="textbox mb-20">
                 <h2 className="text-8xl text-[#00ff85] mt-7 mb-7 font-bold tracking-wider max-sm:text-6xl">
                     Contact

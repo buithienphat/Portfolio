@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 // import "./about.css";
 import "./computerstyle.css";
 
-const About = () => {
+const About = ({ scrollToContact }) => {
     return (
         <div
             id="about"
-            className="flex flex-row-reverse relative justify-between items-center gap-[100px] pt-8 max-xl:flex-col max-xl:gap-[100px]"
+            className="flex flex-row-reverse justify-between items-center gap-[100px] pt-8 max-xl:flex-col max-xl:gap-[100px]"
         >
-            <div className="max-w-[50%] max-xl:max-w-[100%] relative">
+            <div className="max-w-[50%] max-xl:max-w-[100%]">
                 <h2 className="text-8xl text-[#00ff85] mb-7 font-bold tracking-wider max-sm:text-6xl">
                     About Me
                 </h2>
-                <p>
+                <p className="z-20">
                     Hello, I am a Front-end web developer with over 6 month of
                     experience. My programming skills include HTML, CSS,
                     TaiwindCss, JavaScript, ReactJs, Redux, NextJs, TypeScript.
@@ -38,10 +38,11 @@ const About = () => {
                     </a>{" "}
                     profile for more details or just{" "}
                     <a
-                        className="text-[#00ff85]"
-                        href="http://"
+                        className="contact text-[#00ff85]"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={(e) => scrollToContact(e)}
                     >
                         Contact me
                     </a>

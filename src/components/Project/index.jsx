@@ -39,7 +39,7 @@ const Project = () => {
                     return (
                         <div
                             key={i}
-                            className={`carousel-cell mr-7 rounded-lg border-4 border-[#334155] relative aspect-[16/9] w-[50%] overflow-hidden max-xl:aspect-[16/9]`}
+                            className={`carousel-cell mr-7 rounded-lg border-4 border-[#334155] relative aspect-[16/9] w-[50%] overflow-hidden xl:w-[40%]`}
                         >
                             <div className="w-[100%] h-[100%] px-5 relative flex flex-col justify-center bg-black/90 z-10 opacity-0 transition duration-1000 hover:opacity-100">
                                 <div className="flex justify-between items-center">
@@ -65,7 +65,7 @@ const Project = () => {
                                 <p className="text-[#00ff85] font-[600] tracking-[5px] uppercase">
                                     {author || ""}
                                 </p>
-                                <p className="my-[10px] mb-[10px] min-h-[72px] line-clamp-3 max-sm:text-xs max-sm:my-0">
+                                <p className="my-[10px] mb-[10px] min-h-[50px] line-clamp-3 max-sm:text-xs max-sm:my-0">
                                     {description || ""}
                                 </p>
                                 <div className="flex items-center content-center gap-[10px] overflow-hidden">
