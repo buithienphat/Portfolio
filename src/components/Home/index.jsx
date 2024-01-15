@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
-import Button from "../Button";
+import React, { forwardRef, useEffect } from "react";
 import "./HomeStyle.css";
 
-const Home = () => {
+const Home = (props, ref) => {
     useEffect(() => {
         const ball = document.querySelector(".ball");
         ball.style.mix;
@@ -28,7 +27,6 @@ const Home = () => {
         }
         animate();
 
-        const homeElelment = document.querySelector("#home");
         document.addEventListener("mousemove", function (event) {
             mouseX = event.pageX;
             mouseY = event.pageY;
@@ -61,7 +59,7 @@ const Home = () => {
                     Contact me
                 </a>
             </div>
-            <div className="stage w-[35%] h-[250px] top-[50%] max-sm:h-[70px]">
+            <div className="stage w-[35%] h-[250px] top-[50%] max-sm:h-[70px] z-10">
                 <div className="cubespinner">
                     <div className="cube flex items-center justify-center ite face1">
                         <img
@@ -107,9 +105,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="ball z-[0]] "></div>
         </div>
     );
 };
 
-export default Home;
+export default forwardRef(Home);

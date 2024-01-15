@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 // import "./about.css";
 import "./computerstyle.css";
 
-const About = ({ scrollToContact }) => {
+const About = () => {
     return (
         <div
             id="about"
             className="flex flex-row-reverse justify-between items-center gap-[100px] pt-8 max-xl:flex-col max-xl:gap-[100px]"
         >
             <div className="max-w-[50%] max-xl:max-w-[100%]">
-                <h2 className="text-8xl text-[#00ff85] mb-7 font-bold tracking-wider max-sm:text-6xl">
+                <h2 className="text-8xl text-transparent bg-clip-text  bg-gradient-to-r from-[#03ff85] to-[#00e6da] mb-7 font-bold tracking-wider max-sm:text-6xl">
                     About Me
                 </h2>
                 <p className="z-20">
@@ -42,7 +42,14 @@ const About = ({ scrollToContact }) => {
                         href="#"
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(e) => scrollToContact(e)}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.scrollTo({
+                                top: document.querySelector("#contact")
+                                    .offsetTop,
+                                behavior: "smooth",
+                            });
+                        }}
                     >
                         Contact me
                     </a>

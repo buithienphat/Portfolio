@@ -9,29 +9,26 @@ import Project from "./components/Project";
 function App() {
     const [windowWidth, setWindowWidth] = useState(0);
     const [windowHeight, setWindowHeight] = useState(0);
-
-    const refCheck = useRef(null);
-    const check = refCheck.current?.offsetTop;
-
-    console.log("check", check);
-
-    const scrollToContact = (e) => {
-        e?.preventDefault();
-        window.scrollTo({
-            top: check,
-            behavior: "smooth",
-        });
-    };
-
+    const ref = useRef();
+    const ballEle1 = ref.current;
     let resizeWindow = () => {
         setWindowWidth(window.innerWidth);
         setWindowHeight(window.innerHeight);
     };
+
     useEffect(() => {
+        if (windowWidth < 1280) {
+            if (ballEle1) {
+                ballEle1.style.display = "none";
+            }
+        } else if (ballEle1) {
+            ballEle1.style.display = "block";
+        }
         resizeWindow();
         window.addEventListener("resize", resizeWindow);
+
         return () => window.removeEventListener("resize", resizeWindow);
-    }, [windowWidth, windowHeight]);
+    }, [windowWidth]);
 
     return (
         <>
@@ -44,11 +41,14 @@ function App() {
                     <div className="stars5"></div>
                     <div className="shooting-stars z-0"></div>
                 </div>
-                <Navbar />
-                <Home />
-                <About scrollToContact={scrollToContact} />
-                <Project />
-                <Contact refCheck={refCheck} />
+                <div className="max-w-screen-2xl relative mx-auto">
+                    <Navbar />
+                    <Home ref={ref} />
+                    <About />
+                    <Project />
+                    <Contact />
+                </div>
+                <div ref={ref} className="ball z-1"></div>
                 <div className="sky">
                     <div className="stars"></div>
                     <div className="stars2"></div>

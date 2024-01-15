@@ -6,10 +6,13 @@
 }
 
 .flickity-page-dots {
-    bottom: -50px;
+    position: relative;
+    margin-bottom: 0;
+    z-index: 0;
 }
 .flickity-page-dots .dot {
-    background-color: #fff;
+    border: 1px solid white;
+    background-color: gray;
     opacity: 1;
 }
 
