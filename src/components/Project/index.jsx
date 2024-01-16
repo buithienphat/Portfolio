@@ -13,7 +13,6 @@ const Project = () => {
             contain: true,
             // pageDots: false,
             prevNextButtons: false,
-            autoPlay: 2000,
             watchCSS: true,
         });
     }, []);
