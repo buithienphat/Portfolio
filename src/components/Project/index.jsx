@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { dataProject } from "../../contant/dataProject";
 import { ArrowsAltOutlined } from "@ant-design/icons";
 import "./flickity.css";
+import { message } from "antd";
 
 const Project = () => {
     useEffect(() => {
@@ -93,7 +94,10 @@ const Project = () => {
             </div>
             <div>
                 <a
-                    href="./assets/file/CV.pdf"
+                    href="./assets/file/Fresher Frontend.pdf"
+                    onClick={() => {
+                        message.success("Downloaded");
+                    }}
                     download
                     className="p-5 text-xl tracking-wide bg-[#03ff85] rounded-xl text-[black] relative z-10 hover:bg-[#00e6da] duration-300"
                 >
