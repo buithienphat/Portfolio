@@ -43,7 +43,7 @@ function App() {
                 </div>
                 <div className="max-w-screen-2xl relative mx-auto">
                     <Navbar />
-                    <Home ref={ref} />
+                    <Home />
                     <About />
                     <Project />
                     <Contact />

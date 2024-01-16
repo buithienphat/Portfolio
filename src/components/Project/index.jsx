@@ -18,7 +18,16 @@ const Project = () => {
         });
     }, []);
     return (
-        <div id="project" className="py-40 text-center max-sm:pt-16">
+        <div
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            id="project"
+            className="py-40 text-center max-sm:pt-16"
+        >
             <div>
                 <h2 className="text-8xl leading-tight text-transparent bg-clip-text  bg-gradient-to-r from-[#03ff85] to-[#00e6da] mt-7 mb-7 font-bold tracking-wider max-sm:text-5xl max-sm:text-left">
                     My Project

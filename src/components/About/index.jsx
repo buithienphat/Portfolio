@@ -8,7 +8,15 @@ const About = () => {
             id="about"
             className="flex flex-row-reverse justify-between items-center gap-[100px] pt-8 max-xl:flex-col max-xl:gap-[100px]"
         >
-            <div className="max-w-[50%] max-xl:max-w-[100%]">
+            <div
+                data-aos="fade-up-left"
+                data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                className="max-w-[50%] max-xl:max-w-[100%]"
+            >
                 <h2 className="text-8xl text-transparent bg-clip-text  bg-gradient-to-r from-[#03ff85] to-[#00e6da] mb-7 font-bold tracking-wider max-sm:text-6xl">
                     About Me
                 </h2>
@@ -57,60 +65,20 @@ const About = () => {
                 </p>
             </div>
 
-            <div className="relative w-[100%] z-10 max-xl:w-auto">
+            <div
+                data-aos="fade-up-right"
+                data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                className="relative w-[100%] z-10 max-xl:w-auto"
+            >
                 <div className="computer max-xl:static  max-xl:transform-none">
                     <div className="screen relative"></div>
                     <div className="stand"></div>
                 </div>
             </div>
-
-            {/* <div className="earth"></div> */}
-            {/* <div class="stage">
-                <div class="cubespinnerround">
-                    <div class="face1 flex items-center justify-center">
-                        <img
-                            className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
-                            src="/assets/img/htmlicon.png"
-                            alt="cssicon"
-                        />
-                    </div>
-                    <div class="face2 flex items-center justify-center">
-                        <img
-                            className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
-                            src="/assets/img/cssicon.png"
-                            alt="cssicon"
-                        />
-                    </div>
-                    <div class="face3 flex items-center justify-center">
-                        <img
-                            className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
-                            src="/assets/img/JSicon.png"
-                            alt="cssicon"
-                        />
-                    </div>
-                    <div class="face4 flex items-center justify-center">
-                        <img
-                            className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
-                            src="/assets/img/React-icon.png"
-                            alt="cssicon"
-                        />
-                    </div>
-                    <div class="face5 flex items-center justify-center">
-                        <img
-                            className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
-                            src="/assets/img/redux-icon.png"
-                            alt="cssicon"
-                        />
-                    </div>
-                    <div class="face6 flex items-center justify-center">
-                        <img
-                            className="w-[150px] h-[150px] max-sm:w-[70px] max-sm:h-[70px]"
-                            src="/assets/img/nextjs-icon.png"
-                            alt="cssicon"
-                        />
-                    </div>
-                </div>
-            </div> */}
         </div>
     );
 };
