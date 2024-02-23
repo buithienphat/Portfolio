@@ -1,127 +1,127 @@
 .computer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .computer .screen {
-    display: block;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: rgba(24, 24, 24, 0.8);
-    z-index: 2;
-    overflow: hidden;
+  display: block;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgba(24, 24, 24, 0.8);
+  z-index: 2;
+  overflow: hidden;
 }
 .computer .screen::before {
-    content: "";
-    position: relative;
-    color: #b8bb26;
-    font-size: 10px;
-    left: 10px;
-    top: 5px;
-    animation: cursor 3s infinite;
+  content: "";
+  position: relative;
+  color: #b8bb26;
+  font-size: 10px;
+  left: 10px;
+  top: 5px;
+  animation: cursor 3s infinite;
 }
 .computer .screen::after {
-    content: "";
+  content: "";
 }
 .computer .stand {
-    display: block;
-    width: 300px;
-    height: 16px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: #e3e3e3;
-    z-index: 2;
+  display: block;
+  width: 300px;
+  height: 16px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #e3e3e3;
+  z-index: 2;
 }
 .computer .stand::before {
-    content: "";
-    position: relative;
-    display: block;
-    border: 40px solid #9f9f9f;
-    border-top: none;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    width: 60px;
-    height: 0;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+  content: "";
+  position: relative;
+  display: block;
+  border: 40px solid #9f9f9f;
+  border-top: none;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  width: 60px;
+  height: 0;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 .computer .stand::after {
-    content: "";
-    position: relative;
-    display: block;
-    width: 150px;
-    height: 10px;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: #e3e3e3;
-    z-index: 2;
+  content: "";
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 10px;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #e3e3e3;
+  z-index: 2;
 }
 .part {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 160px;
-    height: 160px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 .pixel,
 .a,
 .b,
 .c {
-    display: block;
-    width: 10px;
-    height: 10px;
+  display: block;
+  width: 10px;
+  height: 10px;
 }
 .a {
-    background-color: transparent;
+  background-color: transparent;
 }
 .b {
-    background-color: #cc241d;
+  background-color: #cc241d;
 }
 .c {
-    background-color: #fb4934;
+  background-color: #fb4934;
 }
 
 @keyframes cursor {
-    0% {
-        content: "█";
-    }
-    25% {
-        content: "[phat ~]";
-    }
-    50% {
-        content: "[phatxxx@ ~█]  ";
-    }
-    75% {
-        content: "[phatxxx@gmail.com ~] ";
-    }
-    100% {
-        content: "[phatxxx@gmail.com ~] █";
-    }
+  0% {
+    content: "█";
+  }
+  25% {
+    content: "[bui ~]";
+  }
+  50% {
+    content: "[buithienphat ~█]  ";
+  }
+  75% {
+    content: "[buithienphat.btp@gmail.com ~] ";
+  }
+  100% {
+    content: "[buithienphat.btp@gmail.com ~] █";
+  }
 }
 .word {
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: grab;
-    font-size: 16px;
-    /* line-height: normal; */
-    color: #ffeb3b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: grab;
+  font-size: 16px;
+  /* line-height: normal; */
+  color: #ffeb3b;
 }
 .word.highlighted {
-    font-weight: bold;
-    color: black;
+  font-weight: bold;
+  color: black;
 }
