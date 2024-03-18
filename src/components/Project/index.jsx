@@ -39,7 +39,6 @@ const Project = () => {
           const {
             name,
             dateComplete,
-            author,
             description,
             tagTechnologies,
             link,
@@ -59,18 +58,17 @@ const Project = () => {
                     </a>
                   </h3>
                   <a className="p-3 max-sm:p-0" href={link} target="_blank">
+                    {/* Live Demo */}
                     <ArrowsAltOutlined
                       alt="View More"
                       style={{
-                        fontSize: 16,
+                        fontSize: 20,
+                        color: "#03ff85",
+                        border: "1px solid #03ff85",
                       }}
                     />
                   </a>
                 </div>
-                <p className="mb-1 text-xs">{dateComplete || ""}</p>
-                <p className="text-[#00ff85] font-[600] tracking-[5px] uppercase">
-                  {author || ""}
-                </p>
                 <p className="my-[10px] mb-[10px] min-h-[60px] line-clamp-3 max-sm:text-xs max-sm:my-0">
                   {description || ""}
                 </p>

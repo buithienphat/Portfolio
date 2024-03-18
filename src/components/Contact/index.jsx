@@ -1,11 +1,13 @@
 import { MailFilled, PhoneFilled } from "@ant-design/icons";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { MESSAGE, REGREX } from "../../contant/validate";
 import { message } from "antd";
 import { alert } from "../../contant/antMessage";
+import axios from "axios";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -13,8 +15,19 @@ const Contact = () => {
     reset,
   } = useForm();
 
-  const _onSubmit = (data) => {
-    message.success(alert.success);
+  const _onSubmit = async (data) => {
+    setLoading(true);
+    try {
+      const payload = { phone: "0374267700", name: "Phat", ...data };
+      console.log("payload", payload);
+      axios.post("http://localhost:5555/users", payload);
+      setLoading(false);
+      message.success(alert.success);
+    } catch (error) {
+      console.log("error", error);
+      setLoading(false);
+    }
+
     reset();
   };
 
