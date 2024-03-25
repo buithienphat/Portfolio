@@ -21,14 +21,15 @@ const About = () => {
           About Me
         </h2>
         <p className="z-20">
-          Hello, I am a Front-end web developer with over 6 month of experience.
-          My programming skills include HTML, CSS, TaiwindCss, JavaScript,
-          ReactJs, Redux, NextJs, TypeScript.
+          I'm Phat, a software developer. I have a passion for creating
+          innovative websites that make it beauty and SEO-Friendly with Ui-Ux
+          design for user. When I'm not coding, I will use the time for personal
+          preferences such as football, gym, reading book,...
         </p>
         <p className="my-[10px]">
-          I always want to learn and research to improve myself and develop my
-          career as a programmer. My strength is mindset logic and apparent. I
-          ability listening, and team work effective.
+          I always want to learn and research to improve myself more and develop
+          my career as a programmer. My power is logical thinking and clarity. I
+          the ability to listen, and to work effectively as a team.
         </p>
         <p>
           My coding style involves writing clean, SEO-friendly code that is
@@ -58,7 +59,23 @@ const About = () => {
           >
             Contact me
           </a>
-          .
+          , Or{" "}
+          <a
+            className="contact text-[#00ff85]"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: document.querySelector("#contact").offsetTop,
+                behavior: "smooth",
+              });
+            }}
+          >
+            Download My CV
+          </a>{" "}
+          to be able to better understand the programming skills I have.
         </p>
       </div>
 

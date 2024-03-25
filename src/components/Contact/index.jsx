@@ -20,15 +20,15 @@ const Contact = () => {
     try {
       const payload = { phone: "0374267700", name: "Phat", ...data };
       console.log("payload", payload);
-      axios.post("http://localhost:5555/users", payload);
+      // axios.post("http://localhost:5555/users", payload);
       setLoading(false);
       message.success(alert.success);
     } catch (error) {
       console.log("error", error);
+    } finally {
       setLoading(false);
+      reset();
     }
-
-    reset();
   };
 
   return (

@@ -1,5 +1,5 @@
 export const alert = {
-    success: "Submit success! Thank you",
-    fail: "",
-    info: "",
+  success: "Thank you so much!!! I will contact you",
+  fail: "",
+  info: "",
 };
