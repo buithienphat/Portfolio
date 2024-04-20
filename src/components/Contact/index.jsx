@@ -18,16 +18,13 @@ const Contact = () => {
   const _onSubmit = async (data) => {
     setLoading(true);
     try {
-      const payload = { phone: "0374267700", name: "Phat", ...data };
-      console.log("payload", payload);
-      // axios.post("http://localhost:5555/users", payload);
-      setLoading(false);
       message.success(alert.success);
+      setLoading(false);
+      reset();
     } catch (error) {
       console.log("error", error);
     } finally {
       setLoading(false);
-      reset();
     }
   };
 

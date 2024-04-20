@@ -32,6 +32,17 @@ export const dataProject = [
   },
   {
     id: 4,
+    name: "Chat App",
+    dateComplete: "3 weeks",
+    author: "Bui Thien Phat",
+    description:
+      "Fullstack CHAT App using MERN (mongoDB, express, react, nodeJs), libraries in use DaisyUi, JWT, Antd, Socket.io, React Hook Form, Zustand, ... ",
+    tagTechnologies: ["NodeJs", "MongoDB", "Express", "React", "Zustand"],
+    link: "https://chat-app-1yn2.onrender.com/",
+    img: "/assets/img/chatapp.png",
+  },
+  {
+    id: 5,
     name: "Wooder",
     dateComplete: "One Week",
     author: "Bui Thien Phat",
@@ -43,7 +54,7 @@ export const dataProject = [
     img: "/assets/img/wooder.png",
   },
   {
-    id: 5,
+    id: 6,
     name: "Shop e-commerce",
     dateComplete: "Two month",
     author: "Bui Thien Phat",
@@ -52,16 +63,5 @@ export const dataProject = [
     tagTechnologies: ["Javascript", "ReactJS", "Redux", "Performance"],
     link: "https://cfdproject-shop.vercel.app/",
     img: "/assets/img/shop-ecommerce.png",
-  },
-  {
-    id: 5,
-    name: "Chat App",
-    dateComplete: "3 weeks",
-    author: "Bui Thien Phat",
-    description:
-      "Fullstack CHAT App using MERN (mongoDB, express, react, nodeJs), libraries in use DaisyUi, JWT, Antd, Socket.io, React Hook Form, Zustand, ... ",
-    tagTechnologies: ["NodeJs", "MongoDB", "Express", "React", "Zustand"],
-    link: "https://chat-app-1yn2.onrender.com/",
-    img: "/assets/img/chatapp.png",
   },
 ];
